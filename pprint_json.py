@@ -14,8 +14,8 @@ def load_data(filepath):
         return json.load(file_handler)
 
 
-def pretty_print_json(data):
-    pretty_print = json.dumps(load_data(data), indent=4, sort_keys=True, ensure_ascii=False)
+def pretty_print_json(json_content):
+    pretty_print = json.dumps(load_data(json_content), indent=4, sort_keys=True, ensure_ascii=False)
     print(pretty_print)
 
 
